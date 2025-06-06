@@ -12,12 +12,9 @@
     "dev": {
       "name": "Start Dev Server",
       "command": "pnpm run dev",
-      "runAtStart": true,
+      "runAtStart": false,
       "preview": {
         "port": 3000
-      },
-      "restartOn": {
-        "files": ["./pnpm-lock.yaml"]
       }
     },
     "build": {
@@ -37,10 +34,7 @@
     },
     "install": {
       "name": "Install Dependencies",
-      "command": "pnpm install",
-      "restartOn": {
-        "files": ["./package.json"]
-      }
+      "command": "pnpm install"
     }
   }
 }
